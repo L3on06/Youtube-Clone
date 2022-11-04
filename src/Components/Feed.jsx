@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import {Box, Stack, Typography} from "@mui/material"
-import { SideBar } from "./Export";
-import {Slider, Videos} from "./Export"
+import { SideBar } from ".";
+import {Slider, Videos} from "."
 import { FetchFromAPI } from "../Utils/FetchFromAPI"
 
 const Feed = () => {
@@ -26,9 +26,9 @@ const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Typography className="copyRight"
+        <Typography className="copyright"
           variant="body2" 
-          sx={{mt:1.5, color: "#fff"}}
+          sx={{mt:1.5, color: "#fff",}}
         >
           CopyRight 2022 Leon
         </Typography>
@@ -47,9 +47,10 @@ const Feed = () => {
           sx={{color: "white"}}
         >{selectedCategory} <span style={{color:'#F31503'}}>Videos</span>
         </Typography>
-      </Box>
 
       <Videos videos={videos} />
+      </Box>
+
     </Stack>
   )
 };
