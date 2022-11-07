@@ -50,7 +50,7 @@ a {
     text-transform: capitalize;
     display: flex;
     align-items: center;
-    justify-content: start;
+    /* justify-content: start; */
     cursor: pointer;
     background: transparent;
     outline: none;
@@ -79,11 +79,11 @@ a {
         overflow: auto !important;
     }
 
-.react-player {
-    height: 45vh !important;
-}
+    .react-player {
+        height: 45vh !important;
+    }
 
-.search-bar {
-    width: 200px;
-}
+    .search-bar {
+        width: 200px;
+    }
 }
