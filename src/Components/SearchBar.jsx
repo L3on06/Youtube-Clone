@@ -26,7 +26,8 @@ const [searchTerm, setSearchTerm] = useState('');
                 border: "1px solid #e3e3e3",
                 pl: 2,
                 boxShadow: "none",
-                mr: {sm:5}
+                mr: { sm: 5 },
+                mt: 5
             }}
         >
             <input
