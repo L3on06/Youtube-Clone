@@ -1,6 +1,5 @@
 import React from "react";
 import { Stack } from "@mui/material";
-
 import { categories } from "../Utils/Constants";
 
 const Categories = ({ selectedCategory, setSelectedCategory }) => (
@@ -9,9 +8,8 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
         sx={{
             overflowY: "auto",
             height: { sx: "auto", md: "95%" },
-            flexDirection: { md: "column" },
-        }}
-    >
+            flexDirection: { md: "column" }
+        }}>
         {categories.map((category) => (
             <button
                 className="category-btn"
@@ -20,8 +18,7 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
                     background: category.name === selectedCategory && "#FC1503",
                     color: "white",
                 }}
-                key={category.name}
-            >
+                key={category.name}>
                 <span style={{ color: category.name === selectedCategory ? "white" : "red", marginRight: "15px" }}>
                     {category.icon}
                 </span>
