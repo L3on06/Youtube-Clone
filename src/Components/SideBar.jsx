@@ -6,10 +6,11 @@ const Categories = ({ selectedCategory, setSelectedCategory }) => (
     <Stack
         direction="row"
         sx={{
-            overflowY: "auto",
+            overflowY: "scroll",
             height: { sx: "auto", md: "95%" },
             flexDirection: { md: "column" }
         }}>
+
         {categories.map((category) => (
             <button
                 className="category-btn"

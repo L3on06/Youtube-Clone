@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Box, CardContent, CardMedia } from "@mui/material";
 import { CheckCircle } from '@mui/icons-material';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { demoProfilePicture } from "../Utils/Constants";
 
 const ChannelCard = ({ channelDetail, marginTop }) => (
