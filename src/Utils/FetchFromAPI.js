@@ -5,7 +5,7 @@ const BASE_URL = 'https://youtube-v31.p.rapidapi.com'
 const options = {
     url: BASE_URL,
     params: {
-        maxResults: '50'
+        maxResults: '20'
     },
     headers: {
         'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
@@ -14,6 +14,11 @@ const options = {
 };
 
 export const FetchFromAPI = async (url) => {
-    const { data } = await axios.get(`${BASE_URL}/${url}`, options)
-    return data;
+    try {
+        const { data } = await axios.get(`${BASE_URL}/${url}`, options)
+        return data;
+    } catch (error) {
+        return error;
+    }
+
 }
